@@ -1,0 +1,138 @@
+.container {
+    display: grid;
+    grid-template-columns: 2.2fr 0.8fr;
+    grid-template-rows: 125px auto 125px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "hdr hdr"
+    "blg aut"
+    "scl scl";
+    border: 2px solid #000;
+}
+
+/* header section */
+.header {
+    grid-area: hdr;
+    padding: 10px 10px 10px 25px;
+    background: rgb(228, 229, 231);
+    
+}
+
+.header h1 {
+    font-style: italic;
+}
+
+/* blog section */
+.blog {
+    grid-area: blg;
+    border-right: 1px solid #000;
+    padding: 20px;
+}
+
+.blog a {
+    font-style: italic;
+    float: right;
+}
+
+q {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+/* author section */
+.author {
+    grid-area: aut;
+    padding-right: 50px;
+
+}
+
+.author ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.ava {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* social sharing section */
+.social {
+    grid-area: scl;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+h3 {
+    padding-right: 20px;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+/* viewscreens for devices smaller than 1200 pixels */
+@media(max-width:1200px){
+    .container {
+        height: fit-content;
+        grid-template-columns: 2.8fr 0.2f;
+        grid-template-rows: 125px auto 125px;
+        grid-template-areas: 
+        "hdr hdr"
+        "blg aut"
+        "scl scl";
+    }
+   
+}
+
+
+/* viewscreens for devices smaller than 900 pixels */
+@media(max-width:900px){
+    .container {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog {
+        border: none;
+        border-bottom:1px solid black;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,47 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.nav {
+    grid-area: nav;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav ul li {
+    font-size: 20px;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+.nav ul li:hover {
+    color:blue;
+}
+
+.search-bar {
+    border: hidden;
+    height: 2em;
+    width: 400px;
+    background: rgb(241, 244, 245);
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+.fa-calendar {
+    color: black;
+}
+
+.fa-calendar:hover {
+    color: blue;
+}
+
+.fa-align-left {
+    color: black;
+}
+
+.fa-align-left:hover {
+    color: blue;
+}

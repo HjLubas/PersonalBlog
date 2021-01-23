@@ -1,0 +1,58 @@
+.blogs {
+    grid-area: blg;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+a {
+    text-align: end;
+}
+
+i {
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-style: italic;
+    text-indent: 5px;
+}
+
+.card-one {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.travel {
+    background-size: contain;
+    height: 300px;
+    width: 425px;
+}
+
+.card-two {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.health {
+    background-size: contain;
+    height: 300px;
+    width: 425px;   
+}
+
+.card-three {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.politics {
+    background-size: contain;
+    height: 300px;
+    width: 425px;     
+}

@@ -1,0 +1,39 @@
+@import "main-blog.css";
+@import "main-footer.css";
+@import "main-nav.css";
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 450px 50px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "nav nav nav"
+    "blg blg blg"
+    "ftr ftr ftr";
+    border: 2px solid black;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/* viewscreens for smaller devices */
+@media(max-width:1400px){
+    .container {
+        grid-template-rows: 100px auto 50px;
+    }
+
+    .blogs {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin-left: 0px;
+        margin-right: 40px;
+    }
+
+    .search-bar {
+        width: 100px;
+    }
+
+}
