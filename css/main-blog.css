@@ -4,6 +4,8 @@
     padding-left: 10px;
     padding-right: 10px;
     justify-content: center;
+    grid-gap: 20px;
+    flex-wrap: wrap;
 }
 
 a {
@@ -27,32 +29,43 @@ p {
 .card-one {
     padding: 10px;
     border: 1px solid black;
+    width: 420px;
 }
 
 .travel {
-    background-size: contain;
     height: 300px;
-    width: 425px;
+    width: 100%;
 }
 
 .card-two {
     padding: 10px;
     border: 1px solid black;
+    width: 420px;
 }
 
 .health {
-    background-size: contain;
     height: 300px;
-    width: 425px;   
+    width: 100%;   
 }
 
 .card-three {
     padding: 10px;
     border: 1px solid black;
+    width: 420px;
 }
 
 .politics {
     background-size: contain;
     height: 300px;
-    width: 425px;     
+    width: 100%;     
+}
+
+figure {
+    margin-inline: 0px;
+}
+
+figcaption {
+    text-align: right;
+    font-style: italic;
+    font-size: 12px;
 }

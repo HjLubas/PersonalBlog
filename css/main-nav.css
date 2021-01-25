@@ -7,12 +7,14 @@
 .navbar ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 16px;
 }
 
 .navbar ul li {
     font-size: 20px;
-    margin-left: 125px;
-    margin-right: 125px;
+    padding: 25px;
 }
 
 .navbar ul li:hover {
