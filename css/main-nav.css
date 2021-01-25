@@ -1,21 +1,21 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
-.nav {
+.navbar {
     grid-area: nav;
 }
 
-.nav ul {
+.navbar ul {
     list-style-type: none;
     display: flex;
 }
 
-.nav ul li {
+.navbar ul li {
     font-size: 20px;
     margin-left: 125px;
     margin-right: 125px;
 }
 
-.nav ul li:hover {
+.navbar ul li:hover {
     color:blue;
 }
 

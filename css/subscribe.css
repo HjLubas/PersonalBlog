@@ -12,7 +12,7 @@
 }
 
 /* header section */
-.header {
+.subscribe-header {
     grid-area: hdr;
     display: flex;
     flex-direction: column;
@@ -52,15 +52,15 @@ input[type=text], input[type=submit] {
 
 /* viewscreens for devices smaller than 900 pixels */
 @media(max-width:900px){
-    .container {
-      grid-template-rows: auto;
-    }
-
-    .header {
-      width: 70%;
-    }
-
-    .info {
-      width: 70%;
-    }
+  .container {
+    grid-template-rows: auto;
   }
+
+  .subscribe-header {
+    width: 70%;
+  }
+
+  .info {
+    width: 70%;
+  }
+}
